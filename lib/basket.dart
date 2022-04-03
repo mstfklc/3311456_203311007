@@ -14,14 +14,19 @@ class sepet extends StatelessWidget {
       ),
       body: SafeArea(
         child: Center(
-          child:Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Icon(Icons.shopping_basket,size: 80,),
-              Text("Sepetinizde Henüz Bir Ürün Bulunmamaktadır.",style: TextStyle(fontSize: 20),)
-            ],
-          )
-        ),
+            child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(
+              Icons.shopping_basket,
+              size: 80,
+            ),
+            Text(
+              "Sepetinizde Henüz Bir Ürün Bulunmamaktadır.",
+              style: TextStyle(fontSize: 20),
+            )
+          ],
+        )),
       ),
     );
   }

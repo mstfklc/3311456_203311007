@@ -15,37 +15,47 @@ class urun_liste extends StatelessWidget {
         ),
       ),
       body: SafeArea(
-        child: Column(
-          children: [Image.asset(
+          child: Column(
+        children: [
+          Image.asset(
             "assets/images/supermarket.jpg",
             height: 200,
             width: MediaQuery.of(context).size.width,
             fit: BoxFit.cover,
           ),
-            Container(
-              height: 300,
-              width: MediaQuery.of(context).size.width,
-              child: GridView.count(crossAxisCount: 3,crossAxisSpacing: 10,mainAxisSpacing: 10,
-                children: [
-
+          Container(
+            height: 300,
+            width: MediaQuery.of(context).size.width,
+            child: GridView.count(
+              crossAxisCount: 3,
+              crossAxisSpacing: 10,
+              mainAxisSpacing: 10,
+              children: [
                 InkWell(
                   onTap: () => Navigator.pushNamed(context, "/urunler"),
                   child: Container(
                     decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(8),
                         color: Colors.grey,
-                      image: DecorationImage(image: AssetImage("asset s/images/deneme.jpg"),fit: BoxFit.cover)
-                    ),
+                        image: DecorationImage(
+                            image: AssetImage("assets/images/freeze.jpg"),
+                            fit: BoxFit.cover)),
                     height: 50,
-
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
-                        Text(
-                          "Dondurulmuş Ürünler",
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 20),
+                        Container(
+                          color: Colors.white.withOpacity(0.5),
+                          child: Padding(
+                            padding: const EdgeInsets.all(4.0),
+                            child: Text(
+                              "Dondurulmuş Ürünler",
+                              style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 20),
+                            ),
+                          ),
                         ),
                       ],
                     ),
@@ -54,21 +64,28 @@ class urun_liste extends StatelessWidget {
                 InkWell(
                   onTap: () => Navigator.pushNamed(context, "/urunler"),
                   child: Container(
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(8),
+                        color: Colors.grey,
+                        image: DecorationImage(
+                            image: AssetImage("assets/images/freeze.jpg"),
+                            fit: BoxFit.cover)),
                     height: 50,
-                    color: Colors.grey,
                     child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.end,
                       children: [
-                        Icon(Icons.emoji_food_beverage),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          "İçecekler",
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 20),
+                        Container(
+                          color: Colors.white.withOpacity(0.5),
+                          child: Padding(
+                            padding: const EdgeInsets.all(4.0),
+                            child: Text(
+                              "Dondurulmuş Ürünler",
+                              style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 20),
+                            ),
+                          ),
                         ),
                       ],
                     ),
@@ -77,33 +94,38 @@ class urun_liste extends StatelessWidget {
                 InkWell(
                   onTap: () => Navigator.pushNamed(context, "/urunler"),
                   child: Container(
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(8),
+                        color: Colors.grey,
+                        image: DecorationImage(
+                            image: AssetImage("assets/images/freeze.jpg"),
+                            fit: BoxFit.cover)),
                     height: 50,
-                    color: Colors.grey,
                     child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.end,
                       children: [
-                        Icon(
-                          Icons.free_breakfast,
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          "Kahvaltılık",
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 20),
+                        Container(
+                          color: Colors.white.withOpacity(0.5),
+                          child: Padding(
+                            padding: const EdgeInsets.all(4.0),
+                            child: Text(
+                              "Dondurulmuş Ürünler",
+                              style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 20),
+                            ),
+                          ),
                         ),
                       ],
                     ),
                   ),
                 ),
-              ],),
+              ],
             ),
-          ],
-        )
-      ),
+          ),
+        ],
+      )),
     );
   }
 }

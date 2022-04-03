@@ -33,7 +33,9 @@ class bilgiler extends StatelessWidget {
                             decoration: new InputDecoration(
                                 labelText: "Telefon No",
                                 hintText: "05346610747",
-                                alignLabelWithHint: false,floatingLabelBehavior: FloatingLabelBehavior.always,
+                                alignLabelWithHint: false,
+                                floatingLabelBehavior:
+                                    FloatingLabelBehavior.always,
                                 enabledBorder: new OutlineInputBorder(
                                     borderSide:
                                         new BorderSide(color: Colors.black)),
@@ -48,7 +50,9 @@ class bilgiler extends StatelessWidget {
                             decoration: new InputDecoration(
                                 labelText: "Ad Soyad",
                                 hintText: "Mustafa Kılıç",
-                                alignLabelWithHint: false,floatingLabelBehavior: FloatingLabelBehavior.always,
+                                alignLabelWithHint: false,
+                                floatingLabelBehavior:
+                                    FloatingLabelBehavior.always,
                                 enabledBorder: new OutlineInputBorder(
                                     borderSide:
                                         new BorderSide(color: Colors.black)),
@@ -63,7 +67,9 @@ class bilgiler extends StatelessWidget {
                             decoration: new InputDecoration(
                                 labelText: "Email",
                                 hintText: "203311007@selcuk.edu.tr",
-                                alignLabelWithHint: false,floatingLabelBehavior: FloatingLabelBehavior.always,
+                                alignLabelWithHint: false,
+                                floatingLabelBehavior:
+                                    FloatingLabelBehavior.always,
                                 enabledBorder: new OutlineInputBorder(
                                     borderSide:
                                         new BorderSide(color: Colors.black)),
@@ -84,7 +90,8 @@ class bilgiler extends StatelessWidget {
                               borderRadius: BorderRadius.circular(10)),
                           child: Text(
                             "Bilgileri Güncelle",
-                            style: TextStyle(fontSize: 20, color: Colors.black87),
+                            style:
+                                TextStyle(fontSize: 20, color: Colors.black87),
                           )),
                     ),
                   ],

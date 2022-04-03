@@ -127,8 +127,10 @@ class login extends StatelessWidget {
                   children: [
                     Text("Henüz Hesabınız Yok Mu? "),
                     TextButton(
-                      onPressed: () =>Navigator.pushNamed(context, "/register"),
-                      child: Text("Kayıt Ol",
+                      onPressed: () =>
+                          Navigator.pushNamed(context, "/register"),
+                      child: Text(
+                        "Kayıt Ol",
                         style: TextStyle(
                             fontWeight: FontWeight.w600, fontSize: 18),
                       ),

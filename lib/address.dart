@@ -26,44 +26,45 @@ class adreslerim extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     SizedBox(
-                      width: MediaQuery.of(context).size.width*0.47,
-
+                      width: MediaQuery.of(context).size.width * 0.47,
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: TextField(
                           decoration: new InputDecoration(
                               labelText: "Telefon No",
                               hintText: "05346610747",
-                              alignLabelWithHint: false,floatingLabelBehavior: FloatingLabelBehavior.always,
+                              alignLabelWithHint: false,
+                              floatingLabelBehavior:
+                                  FloatingLabelBehavior.always,
                               enabledBorder: new OutlineInputBorder(
                                   borderSide:
-                                  new BorderSide(color: Colors.black)),
+                                      new BorderSide(color: Colors.black)),
                               border: new OutlineInputBorder(
                                   borderSide:
-                                  new BorderSide(color: Colors.black))),
+                                      new BorderSide(color: Colors.black))),
                         ),
                       ),
                     ),
                     SizedBox(
-                      width: MediaQuery.of(context).size.width*0.47,
-
+                      width: MediaQuery.of(context).size.width * 0.47,
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: TextField(
                           decoration: new InputDecoration(
                               labelText: "Telefon No",
                               hintText: "05346610747",
-                              alignLabelWithHint: false,floatingLabelBehavior: FloatingLabelBehavior.always,
+                              alignLabelWithHint: false,
+                              floatingLabelBehavior:
+                                  FloatingLabelBehavior.always,
                               enabledBorder: new OutlineInputBorder(
                                   borderSide:
-                                  new BorderSide(color: Colors.black)),
+                                      new BorderSide(color: Colors.black)),
                               border: new OutlineInputBorder(
                                   borderSide:
-                                  new BorderSide(color: Colors.black))),
+                                      new BorderSide(color: Colors.black))),
                         ),
                       ),
                     ),
-
                   ],
                 ),
                 Padding(
@@ -72,32 +73,27 @@ class adreslerim extends StatelessWidget {
                     decoration: new InputDecoration(
                         labelText: "Telefon No",
                         hintText: "05346610747",
-                        alignLabelWithHint: false,floatingLabelBehavior: FloatingLabelBehavior.always,
+                        alignLabelWithHint: false,
+                        floatingLabelBehavior: FloatingLabelBehavior.always,
                         enabledBorder: new OutlineInputBorder(
-                            borderSide:
-                            new BorderSide(color: Colors.black)),
+                            borderSide: new BorderSide(color: Colors.black)),
                         border: new OutlineInputBorder(
-                            borderSide:
-                            new BorderSide(color: Colors.black))),
+                            borderSide: new BorderSide(color: Colors.black))),
                   ),
                 ),
                 Container(
                   height: 300,
-                  width: MediaQuery.of(context).size.width-20,
-                  decoration:BoxDecoration(
-                    image: DecorationImage(
-                      fit: BoxFit.cover,
-                      image: AssetImage("assets/images/deneme.jpg")
-                    )
-                  ),
+                  width: MediaQuery.of(context).size.width - 20,
+                  decoration: BoxDecoration(
+                      image: DecorationImage(
+                          fit: BoxFit.cover,
+                          image: AssetImage("assets/images/deneme.jpg"))),
                 )
-
               ],
             ),
           ),
         ),
       ),
-
     );
   }
 }

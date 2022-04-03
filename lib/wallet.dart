@@ -8,7 +8,7 @@ class cuzdan extends StatefulWidget {
 }
 
 class _cuzdanState extends State<cuzdan> {
-  int money=0;
+  int money = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -43,8 +43,8 @@ class _cuzdanState extends State<cuzdan> {
                 padding: const EdgeInsets.all(8.0),
                 child: MaterialButton(
                     onPressed: () => setState(() {
-                      money+=10;
-                    }),
+                          money += 10;
+                        }),
                     height: 60,
                     color: Colors.grey,
                     shape: RoundedRectangleBorder(

@@ -27,7 +27,7 @@ class urunler extends StatelessWidget {
                   decoration: BoxDecoration(
                       image: DecorationImage(
                           fit: BoxFit.cover,
-                          image: AssetImage("assets/images/deneme.jpg"))),
+                          image: AssetImage("assets/images/freeze.jpg"))),
                 ),
               ),
               InkWell(
@@ -38,7 +38,7 @@ class urunler extends StatelessWidget {
                   decoration: BoxDecoration(
                       image: DecorationImage(
                           fit: BoxFit.cover,
-                          image: AssetImage("assets/images/deneme.jpg"))),
+                          image: AssetImage("assets/images/freeze.jpg"))),
                 ),
               ),
               InkWell(
@@ -49,7 +49,7 @@ class urunler extends StatelessWidget {
                   decoration: BoxDecoration(
                       image: DecorationImage(
                           fit: BoxFit.cover,
-                          image: AssetImage("assets/images/deneme.jpg"))),
+                          image: AssetImage("assets/images/freeze.jpg"))),
                 ),
               ),
               InkWell(
@@ -60,7 +60,7 @@ class urunler extends StatelessWidget {
                   decoration: BoxDecoration(
                       image: DecorationImage(
                           fit: BoxFit.cover,
-                          image: AssetImage("assets/images/deneme.jpg"))),
+                          image: AssetImage("assets/images/freeze.jpg"))),
                 ),
               ),
             ]),
