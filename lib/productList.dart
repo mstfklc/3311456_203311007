@@ -33,7 +33,7 @@ class urun_liste extends StatelessWidget {
                   child: Container(
                     decoration: BoxDecoration(
                         color: Colors.grey,
-                      image: DecorationImage(image: AssetImage("assets/images/deneme.jpg"),fit: BoxFit.cover)
+                      image: DecorationImage(image: AssetImage("asset s/images/deneme.jpg"),fit: BoxFit.cover)
                     ),
                     height: 50,
 
