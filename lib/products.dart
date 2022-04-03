@@ -20,7 +20,7 @@ class urunler extends StatelessWidget {
             crossAxisCount: 2,
             children: [
               InkWell(
-                onTap: () => Navigator.pushNamed(context, "/"),
+                onTap: () => Navigator.pushNamed(context, "/pizza"),
                 child: Container(
                   height: 100,
                   width: 100,
@@ -31,7 +31,7 @@ class urunler extends StatelessWidget {
                 ),
               ),
               InkWell(
-                onTap: () {},
+                onTap: () => Navigator.pushNamed(context, "/pizza"),
                 child: Container(
                   height: 100,
                   width: 100,
@@ -42,7 +42,7 @@ class urunler extends StatelessWidget {
                 ),
               ),
               InkWell(
-                onTap: () {},
+                onTap: () => Navigator.pushNamed(context, "/pizza"),
                 child: Container(
                   height: 100,
                   width: 100,
@@ -53,7 +53,7 @@ class urunler extends StatelessWidget {
                 ),
               ),
               InkWell(
-                onTap: () {},
+                onTap: () => Navigator.pushNamed(context, "/pizza"),
                 child: Container(
                   height: 100,
                   width: 100,

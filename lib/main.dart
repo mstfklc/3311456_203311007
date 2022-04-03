@@ -1,4 +1,5 @@
 import 'package:ceptemarket/address.dart';
+import 'package:ceptemarket/product1.dart';
 import 'package:ceptemarket/productList.dart';
 import 'package:ceptemarket/products.dart';
 import 'package:ceptemarket/register.dart';
@@ -27,6 +28,7 @@ class cepteMarket extends StatelessWidget {
         "/cuzdan": (context) => cuzdan(),
         "/urunler": (context) => const urunler(),
         "/urun_liste": (context) => const urun_liste(),
+        "/pizza": (context) => const pizza(),
       },
       title: "Cepte Market",
     );

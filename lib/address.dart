@@ -31,8 +31,8 @@ class adreslerim extends StatelessWidget {
                         padding: const EdgeInsets.all(8.0),
                         child: TextField(
                           decoration: new InputDecoration(
-                              labelText: "Telefon No",
-                              hintText: "05346610747",
+                              labelText: "İl",
+                              hintText: "Konya",
                               alignLabelWithHint: false,
                               floatingLabelBehavior:
                                   FloatingLabelBehavior.always,
@@ -51,8 +51,8 @@ class adreslerim extends StatelessWidget {
                         padding: const EdgeInsets.all(8.0),
                         child: TextField(
                           decoration: new InputDecoration(
-                              labelText: "Telefon No",
-                              hintText: "05346610747",
+                              labelText: "İlçe",
+                              hintText: "Selçuklu",
                               alignLabelWithHint: false,
                               floatingLabelBehavior:
                                   FloatingLabelBehavior.always,
@@ -71,8 +71,8 @@ class adreslerim extends StatelessWidget {
                   padding: const EdgeInsets.all(8.0),
                   child: TextField(
                     decoration: new InputDecoration(
-                        labelText: "Telefon No",
-                        hintText: "05346610747",
+                        labelText: "Adres",
+                        hintText: "Bosna Hersek Mahallasi Ertugay sokak",
                         alignLabelWithHint: false,
                         floatingLabelBehavior: FloatingLabelBehavior.always,
                         enabledBorder: new OutlineInputBorder(
@@ -87,7 +87,7 @@ class adreslerim extends StatelessWidget {
                   decoration: BoxDecoration(
                       image: DecorationImage(
                           fit: BoxFit.cover,
-                          image: AssetImage("assets/images/deneme.jpg"))),
+                          image: AssetImage("assets/images/maps.jpg"))),
                 )
               ],
             ),
