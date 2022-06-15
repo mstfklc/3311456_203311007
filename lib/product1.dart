@@ -56,7 +56,7 @@ class pizza extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Text(
-                          "Fiyat: 20.50"
+                          "Fiyat: "
                         ,style: TextStyle(fontSize: 25,color: Colors.black),),
                       )
                     ],

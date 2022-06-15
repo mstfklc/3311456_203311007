@@ -11,6 +11,7 @@ class urun_liste extends StatelessWidget {
           "Ürün Listesi",
         ),
         leading: GestureDetector(
+          onTap: (){},
           child: Icon(Icons.production_quantity_limits),
         ),
       ),
@@ -31,7 +32,7 @@ class urun_liste extends StatelessWidget {
               crossAxisSpacing: 10,
               mainAxisSpacing: 10,
               children: [
-                InkWell(
+                GestureDetector(
                   onTap: () => Navigator.pushNamed(context, "/urunler"),
                   child: Container(
                     decoration: BoxDecoration(
@@ -68,7 +69,7 @@ class urun_liste extends StatelessWidget {
                         borderRadius: BorderRadius.circular(8),
                         color: Colors.grey,
                         image: DecorationImage(
-                            image: AssetImage("assets/images/freeze.jpg"),
+                            image: AssetImage("assets/images/acc.jpg"),
                             fit: BoxFit.cover)),
                     height: 50,
                     child: Column(

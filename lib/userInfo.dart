@@ -30,52 +30,52 @@ class bilgiler extends StatelessWidget {
                         Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: TextField(
-                            decoration: new InputDecoration(
+                            decoration:  InputDecoration(
                                 labelText: "Telefon No",
                                 hintText: "05346610747",
                                 alignLabelWithHint: false,
                                 floatingLabelBehavior:
                                     FloatingLabelBehavior.always,
-                                enabledBorder: new OutlineInputBorder(
+                                enabledBorder:  OutlineInputBorder(
                                     borderSide:
-                                        new BorderSide(color: Colors.black)),
-                                border: new OutlineInputBorder(
+                                         BorderSide(color: Colors.black)),
+                                border:  OutlineInputBorder(
                                     borderSide:
-                                        new BorderSide(color: Colors.black))),
+                                         BorderSide(color: Colors.black))),
                           ),
                         ),
                         Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: TextField(
-                            decoration: new InputDecoration(
+                            decoration:  InputDecoration(
                                 labelText: "Ad Soyad",
                                 hintText: "Mustafa Kılıç",
                                 alignLabelWithHint: false,
                                 floatingLabelBehavior:
                                     FloatingLabelBehavior.always,
-                                enabledBorder: new OutlineInputBorder(
+                                enabledBorder:  OutlineInputBorder(
                                     borderSide:
-                                        new BorderSide(color: Colors.black)),
-                                border: new OutlineInputBorder(
+                                         BorderSide(color: Colors.black)),
+                                border:  OutlineInputBorder(
                                     borderSide:
-                                        new BorderSide(color: Colors.black))),
+                                         BorderSide(color: Colors.black))),
                           ),
                         ),
                         Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: TextField(
-                            decoration: new InputDecoration(
+                            decoration:  InputDecoration(
                                 labelText: "Email",
                                 hintText: "203311007@selcuk.edu.tr",
                                 alignLabelWithHint: false,
                                 floatingLabelBehavior:
                                     FloatingLabelBehavior.always,
-                                enabledBorder: new OutlineInputBorder(
+                                enabledBorder:  OutlineInputBorder(
                                     borderSide:
-                                        new BorderSide(color: Colors.black)),
-                                border: new OutlineInputBorder(
+                                         BorderSide(color: Colors.black)),
+                                border:  OutlineInputBorder(
                                     borderSide:
-                                        new BorderSide(color: Colors.black))),
+                                         BorderSide(color: Colors.black))),
                           ),
                         ),
                       ],
@@ -83,7 +83,7 @@ class bilgiler extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: MaterialButton(
-                          onPressed: () => Navigator.pushNamed(context, "/"),
+                          onPressed: () => Navigator.pushNamed(context, ""),
                           height: 35,
                           color: Colors.grey,
                           shape: RoundedRectangleBorder(

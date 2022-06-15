@@ -30,18 +30,18 @@ class adreslerim extends StatelessWidget {
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: TextField(
-                          decoration: new InputDecoration(
+                          decoration:  InputDecoration(
                               labelText: "İl",
                               hintText: "Konya",
                               alignLabelWithHint: false,
                               floatingLabelBehavior:
                                   FloatingLabelBehavior.always,
-                              enabledBorder: new OutlineInputBorder(
+                              enabledBorder:  OutlineInputBorder(
                                   borderSide:
-                                      new BorderSide(color: Colors.black)),
-                              border: new OutlineInputBorder(
+                                       BorderSide(color: Colors.black)),
+                              border:  OutlineInputBorder(
                                   borderSide:
-                                      new BorderSide(color: Colors.black))),
+                                       BorderSide(color: Colors.black))),
                         ),
                       ),
                     ),
@@ -50,18 +50,18 @@ class adreslerim extends StatelessWidget {
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: TextField(
-                          decoration: new InputDecoration(
+                          decoration:  InputDecoration(
                               labelText: "İlçe",
                               hintText: "Selçuklu",
                               alignLabelWithHint: false,
                               floatingLabelBehavior:
                                   FloatingLabelBehavior.always,
-                              enabledBorder: new OutlineInputBorder(
+                              enabledBorder:  OutlineInputBorder(
                                   borderSide:
-                                      new BorderSide(color: Colors.black)),
-                              border: new OutlineInputBorder(
+                                       BorderSide(color: Colors.black)),
+                              border:  OutlineInputBorder(
                                   borderSide:
-                                      new BorderSide(color: Colors.black))),
+                                       BorderSide(color: Colors.black))),
                         ),
                       ),
                     ),
@@ -70,15 +70,15 @@ class adreslerim extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: TextField(
-                    decoration: new InputDecoration(
+                    decoration:  InputDecoration(
                         labelText: "Adres",
                         hintText: "Bosna Hersek Mahallasi Ertugay sokak",
                         alignLabelWithHint: false,
                         floatingLabelBehavior: FloatingLabelBehavior.always,
-                        enabledBorder: new OutlineInputBorder(
-                            borderSide: new BorderSide(color: Colors.black)),
-                        border: new OutlineInputBorder(
-                            borderSide: new BorderSide(color: Colors.black))),
+                        enabledBorder:  OutlineInputBorder(
+                            borderSide:  BorderSide(color: Colors.black)),
+                        border:  OutlineInputBorder(
+                            borderSide:  BorderSide(color: Colors.black))),
                   ),
                 ),
                 Container(

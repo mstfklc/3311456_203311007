@@ -16,11 +16,11 @@ class urunler extends StatelessWidget {
         child: GridView.count(
             padding: const EdgeInsets.all(10),
             crossAxisSpacing: 8,
-            mainAxisSpacing: 8,
+            mainAxisSpacing: 10,
             crossAxisCount: 2,
             children: [
-              InkWell(
-                onTap: () => Navigator.pushNamed(context, "/pizza"),
+              GestureDetector(
+                onLongPress: () => Navigator.pushNamed(context, "/pizza"),
                 child: Container(
                   height: 100,
                   width: 100,

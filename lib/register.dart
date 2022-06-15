@@ -1,10 +1,33 @@
+import 'package:ceptemarket/global.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class register extends StatelessWidget {
-  const register({Key? key}) : super(key: key);
+  register({Key? key}) : super(key: key);
+
+  TextEditingController emailc = TextEditingController();
+  TextEditingController passwordc = TextEditingController();
+  TextEditingController password1c = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
+    Future<bool> register1() async {
+    try {
+      Globals.user = await FirebaseAuth.instance.createUserWithEmailAndPassword(
+          email: emailc.text.toString(),
+          password: passwordc.text.toString()
+      );
+      Navigator.pushNamed(context, "/");
+      return true;
+    } on FirebaseAuthException catch (e) {
+      if (e.code == 'user-not-found') {
+        print('No user found for that email.');
+      } else if (e.code == 'wrong-password') {
+        print('Wrong password provided for that user.');
+      }
+      return false;
+    }
+  }
     return Scaffold(
       resizeToAvoidBottomInset: false,
       backgroundColor: Colors.white,
@@ -61,9 +84,9 @@ class register extends StatelessWidget {
                       padding: EdgeInsets.symmetric(horizontal: 40),
                       child: Column(
                         children: [
-                          makeInput(label: "Kullanıcı Adı"),
-                          makeInput(label: "Parola", obsureText: true),
-                          makeInput(label: "Parola Onayı", obsureText: true)
+                          makeInput(label: "mail",controller: emailc),
+                          makeInput(label: "Parola", obsureText: true,controller: passwordc),
+                          makeInput(label: "Parola Onayı", obsureText: true,controller: password1c)
                         ],
                       ),
                     ),
@@ -80,7 +103,7 @@ class register extends StatelessWidget {
                         child: MaterialButton(
                           minWidth: double.infinity,
                           height: 60,
-                          onPressed: () {},
+                          onPressed: () {register1();},
                           color: Colors.indigoAccent[400],
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(40)),
@@ -123,7 +146,7 @@ class register extends StatelessWidget {
   }
 }
 
-Widget makeInput({label, obsureText = false}) {
+Widget makeInput({label, obsureText = false,controller} ) {
   return Column(
     crossAxisAlignment: CrossAxisAlignment.start,
     children: [
@@ -136,6 +159,7 @@ Widget makeInput({label, obsureText = false}) {
         height: 5,
       ),
       TextField(
+        controller: controller,
         obscureText: obsureText,
         decoration: InputDecoration(
           contentPadding: EdgeInsets.symmetric(vertical: 0, horizontal: 10),
